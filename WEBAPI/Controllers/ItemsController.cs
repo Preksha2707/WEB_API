@@ -29,6 +29,12 @@ namespace WEBAPI.Controllers
 
         new Item { Id = 7, Name = "Tablet", Price=10000},
 
+        new Item { Id = 8, Name = "Switches", Price=1500},
+
+        new Item { Id = 9, Name = "Watches", Price=15600},
+
+        new Item { Id = 10, Name = "Projector", Price=7600},
+
         // Add more items as needed
     };
 
