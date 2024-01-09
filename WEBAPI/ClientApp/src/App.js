@@ -104,7 +104,7 @@ function App() {
             height: '100%'
         }}>
             <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', backgroundColor: 'lightcyan' }}>
-                <h1 style={{ textAlign: 'center', fontSize: '24px', color: 'royalblue' }}><b><u> CRUD for List Of Items</u></b></h1><br /><br />
+                <h1 style={{ textAlign: 'center', fontSize: '24px', color: 'royalblue' }}><b><u> CRUD for List Of Items</u></b></h1><br />
                 
                 <table style={{ margin: '0 auto', borderCollapse: 'collapse' }}>
                     <thead>
