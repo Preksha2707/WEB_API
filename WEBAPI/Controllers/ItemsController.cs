@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +20,14 @@ namespace WEBAPI.Controllers
         new Item { Id = 2, Name = "Mobile", Price=5000 },
         
         new Item { Id = 3, Name = "Charger", Price=5000},
+
+        new Item { Id = 4, Name = "Cable", Price=1000},
+
+        new Item { Id = 5, Name = "Buds", Price=3500},
+
+        new Item { Id = 6, Name = "Phone", Price=5000},
+
+        new Item { Id = 7, Name = "Tablet", Price=10000},
 
         // Add more items as needed
     };
