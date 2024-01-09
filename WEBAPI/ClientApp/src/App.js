@@ -101,11 +101,12 @@ function App() {
         <body style={{
             backgroundColor: '#f5f5f5', 
             
-            height: '100%'}}>
-            <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px' }}>
-                <h1 style={{ textAlign: 'center', fontSize: '24px', color: 'blue' }}><b><u> CRUD for List Of Items</u></b></h1><br /><br/>
-                <span style={{ marginLeft: '600px', color: 'RoyalBlue', paddingBottom: '0px' }}><b>Name</b></span >
-                <span style={{ marginLeft: '20px', color: 'RoyalBlue', paddingBottom: '0px' }}><b>Price</b></span>
+            height: '100%'
+        }}>
+            <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', backgroundColor: 'lightcyan' }}>
+                <h1 style={{ textAlign: 'center', fontSize: '24px', color: 'royalblue' }}><b><u> CRUD for List Of Items</u></b></h1><br /><br />
+                <span style={{ marginLeft: '600px', color: 'Royalblue', paddingBottom: '0px' }}><b><u>NAME</u></b></span >
+                <span style={{ marginLeft: '20px', color: 'Royalblue', paddingBottom: '0px' }}><b><u>PRICE</u></b></span>
 
                 <ul style={{ textAlign: 'center', listStyle: 'none', padding: 0 }}>
                     {items.map((item) => (
@@ -119,7 +120,7 @@ function App() {
                             <button style={{
                                 marginLeft: '10px',
                                 padding: '5px 10px',
-                                backgroundColor: 'lightblue',
+                                backgroundColor: 'green',
                                 border: 'none',
                                 borderRadius: '3px',
                                 cursor: 'pointer',
