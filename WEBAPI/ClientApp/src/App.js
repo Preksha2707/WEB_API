@@ -105,39 +105,44 @@ function App() {
         }}>
             <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', backgroundColor: 'lightcyan' }}>
                 <h1 style={{ textAlign: 'center', fontSize: '24px', color: 'royalblue' }}><b><u> CRUD for List Of Items</u></b></h1><br /><br />
-                <span style={{ marginLeft: '600px', color: 'Royalblue', paddingBottom: '0px' }}><b><u>NAME</u></b></span >
-                <span style={{ marginLeft: '20px', color: 'Royalblue', paddingBottom: '0px' }}><b><u>PRICE</u></b></span>
-
-                <ul style={{ textAlign: 'center', listStyle: 'none', padding: 0 }}>
-                    {items.map((item) => (
-                        <li key={item.id} style={{ marginBottom: '10px' }}><br />
-
-                            <span style={{ marginRight: '30px', color: 'Black' }}>{item.name}{' '}</span>
-
-
-                            <span style={{ marginRight: '30px', color: 'Black' }}>{item.price}{' '}</span>
-
-                            <button style={{
-                                marginLeft: '10px',
-                                padding: '5px 10px',
-                                backgroundColor: 'green',
-                                border: 'none',
-                                borderRadius: '3px',
-                                cursor: 'pointer',
-                                textAlign: 'center',
-                            }} 
-                                onClick={() => handleEditItem(item)}>Edit</button>{' '} &nbsp; &nbsp;&nbsp;
-                            <button style={{
-                                padding: '5px 10px',
-                                backgroundColor: 'tomato',
-                                border: 'none',
-                                borderRadius: '3px',
-                                cursor: 'pointer',
-                            }}
-                                onClick={() => handleDeleteItem(item.id)}>Delete</button>
-                        </li>
-                    ))}
-                </ul><br />
+                
+                <table style={{ margin: '0 auto', borderCollapse: 'collapse' }}>
+                    <thead>
+                        <tr>
+                            <th style={{ textAlign: 'center', color: 'royalblue', padding: '8px', border: '1px solid black' }}>NAME</th>
+                            <th style={{ textAlign: 'center', color: 'royalblue', padding: '8px', border: '1px solid black' }}>PRICE</th>
+                            <th style={{ textAlign: 'center', color: 'royalblue', padding: '8px', border: '1px solid black' }}>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {items.map((item) => (
+                            <tr key={item.id}>
+                                <td style={{ textAlign: 'center', color: 'black', padding: '8px', border: '1px solid black' }}>{item.name}</td>
+                                <td style={{ textAlign: 'center', color: 'black', padding: '8px', border: '1px solid black' }}>{item.price}</td>
+                                <td style={{ textAlign: 'center', padding: '8px', border: '1px solid black' }}>
+                                    <button style={{
+                                        padding: '5px 10px',
+                                        backgroundColor: 'green',
+                                        border: 'none',
+                                        borderRadius: '3px',
+                                        cursor: 'pointer',
+                                        textAlign: 'center',
+                                        marginRight: '5px'
+                                    }}
+                                        onClick={() => handleEditItem(item)}>Edit</button>
+                                    <button style={{
+                                        padding: '5px 10px',
+                                        backgroundColor: 'tomato',
+                                        border: 'none',
+                                        borderRadius: '3px',
+                                        cursor: 'pointer',
+                                    }}
+                                        onClick={() => handleDeleteItem(item.id)}>Delete</button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
                 {itemIdToUpdate ? (
                     <div style={{ marginTop: '20px', marginLeft: '450px' }}>
 
